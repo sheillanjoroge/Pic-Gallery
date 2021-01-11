@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image{
+    margin-bottom: 20px;
+}
+.image img{
+    width: 300px;
+    border-radius: 20px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.more{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 20px;
+    display: block;
+    
+}
+.more-icon{
+    background-color: white;
+
+    border-radius: 20px;
+    color: #6F0AAF;
+    z-index: 100;
+
+}
+.popover-header{
+    color: #6F0AAF;
+}
+
+@media screen and (min-width: 600px){
+    .container{
+        justify-content: center;
+    }
+    .image{
+        margin-right: 20px;
+        margin-top: 60px;
+    }
+    .image img{
+        position: relative;
+        box-shadow: 3px 3px 10px lightgray;
+
+    }
+    
+    .more{
+        display: none;
+    }
+    
+    .more:hover,  .image a:hover + .more{
+        display: block;
+        cursor: pointer;
+    }
+
+    .images{
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .search{
+        border-radius: 20px;
+    }
+}

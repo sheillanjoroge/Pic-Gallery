@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+{% block content%}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock%}
+<div class="container home">
+    <div class="images">
+        {% for image in images %}
+        <div class="image">
+            <div class="img-div">
+                <a href="/photo/{{image.id}}">
+                    <img src="{{image.image_upload.url}}" alt="">
+                </a>
+                
+                <div class="more">
+                    <span class="material-icons more-icon"><a tabindex="0" data-toggle="popover" data-trigger="focus"  title="{{image.name}}" data-content="{{image.description}}">more_horiz</a></span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% block scripts %}
+    <script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+
+{% endblock %}
+

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/photo.css' %}">
+{% endblock%}
+{% block content %}
+<div class="container">
+    <div class="row back-div">
+        <div class="col">
+            <span class="material-icons back"><a href="/">keyboard_backspace</a></span>
+        </div>
+    </div>
+    <div class="row other">
+        <div class="col-12 col-sm-8">
+            <img src="{{image.image_upload.url}}" alt="">
+        </div>
+        <div class="col-12 col-sm-4 mt-4">
+            <div class="row">
+                <div class="col title">
+                    {{image.name}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col content">
+                    {{image.description}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="share-btn">
+                        <button class="btn btn-primary" id="share-btn" tabindex="0" data-trigger="focus" data-toggle="popover" data-link="{{link}}" title="Copied">Share</button>
+                        <input class="form-control" type="text" name="hide-copy" id="copy_text" value="{{link}}">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+{% endblock %}

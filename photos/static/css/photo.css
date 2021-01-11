@@ -1,0 +1,43 @@
+.back{
+    font-size: 48px;
+    margin-bottom: 0%;
+}
+
+.other{
+    z-index: 100;
+    box-shadow: 3px 3px 10px lightgray;
+
+}
+img{
+    width: 100%;
+}
+a, a:visited, a:hover{
+    color: #491cff;
+}
+.title{
+    font-size: 24px;
+    color: #6F0AAF;
+}
+.share-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover{
+    background-color: #491cff;
+    border-color: #491cff;
+}
+
+@media screen and (min-width: 600px){
+    .other{
+        padding-top: 100px;
+        padding-left: 0px;
+    }
+    .back-div{
+        padding-top: 100px;
+    }
+    .share-btn{
+        margin-top: 60px;
+    }
+}

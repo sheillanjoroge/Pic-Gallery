@@ -1,0 +1,76 @@
+{% load static %}
+<div class="logo-div">
+    <img src="{% static 'images/logo.png' %}" alt="">
+
+</div>
+<div class="nav-top">
+    <div class="row">
+        <div class="col-2">
+            <span class="home-route">Home</span>
+        </div>
+        <div class="col-2">
+            <span class="disco-route">Discover</span>
+        </div>  
+        <div class="col">
+            <form action="/search">
+                <input class="form-control search" type="text" id="search" name="image" placeholder="Search for photo or Tag" aria-label="Search">
+            </form>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle round-border" type="button" data-toggle="dropdown">Select Location
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                {% for location in locations %}
+                <li><a href="location/{{location.id}}">{{location.name}}</a></li>
+                {% endfor %}
+            
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="nav-bottom">
+    <div class="row">
+        <div class="col-4 home-route home-nav">
+            <div class="row">
+                <div class="col">
+                    <span class="material-icons">home</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col nav-txt">
+                    Home
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="col-4 search-route search-nav">
+            <div class="row">
+                <div class="col">
+                    <span class="material-icons">search</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col nav-txt">
+                    Search
+                </div>
+            </div>           
+        </div>
+        <div class="col-4 disco-route map-nav">
+            <div class="row">
+                <div class="col">
+                    <span class="material-icons">map</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col nav-txt">
+                    Discover
+                </div>
+            </div>
+            
+           
+        </div>
+    </div>
+</div>

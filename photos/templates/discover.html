@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/discover.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row tags">
+        {% for tag in tags %}
+            <div class="col-6 col-sm-3">
+                <a href="tag/{{tag.id}}">
+                    <div class="card">
+                        <p class="tag">{{tag.name}}</p>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+.card{
+    text-align: center;
+    padding: 20px;
+}
+.tag:hover{
+    color: #6F0AAF;
+}
+
+a, a:visited, a:hover{
+    color: #6F0AAF;
+}
+.tag{
+    cursor: pointer;
+}
+.tags{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding-top: 20px;
+}
+@media screen and (min-width: 600px){
+    .container{
+        padding-top: 100px;
+    }
+}

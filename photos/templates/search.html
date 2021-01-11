@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/search.css' %}">
+{% endblock %}
+    <div class="container">
+        <div class="results-title">
+            Search Results for&nbsp;<span class="search-term">{{term}}</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="images">
+            {% for image in images %}
+            <div class="image">
+                <div class="img-div">
+                    <a href="/photo/{{image.id}}">
+                        <img src="{{image.image_upload.url}}" alt="">
+                    </a>
+                    
+                    <div class="more">
+                        <span class="material-icons more-icon"><a tabindex="0" data-toggle="popover" data-trigger="focus"  title="{{image.name}}" data-content="{{image.description}}">more_horiz</a></span>
+                    </div>
+                </div>
+            </div>
+            {% empty%}
+            <div class="image">
+                <div class="img-dv">
+                    <img src="{% static 'images/nada.svg' %}" alt="">
+                </div>
+            </div>
+            {% endfor %}
+{% endblock %}
