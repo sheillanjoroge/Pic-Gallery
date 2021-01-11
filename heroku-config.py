@@ -1,9 +1,9 @@
 import os
 
-# def removeQuotesFromValue(value):
-# 	value = value.replace("'", '"')
-# 	# value = value.replace('"', "")
-# 	return value
+def removeQuotesFromValue(value):
+	value = value.replace("'", '"')
+	# value = value.replace('"', "")
+	return value
 
 def splitLineIntoParts(line):
 	line = line.lstrip()
