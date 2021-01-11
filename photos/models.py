@@ -1,12 +1,12 @@
 from django.db import models
 
-# class Location(models.Model):
-#     name = models.CharField(max_length=100)
+class Location(models.Model):
+    name = models.CharField(max_length=100)
 
-#     def save_location(self):
-#         self.save()
+    def save_location(self):
+        self.save()
 
-#     def edit_location(self, **fields):
+    def edit_location(self, **fields):
         for field in fields:
             if dir(self).count(field) > 0:
                 setattr(self, field, fields.get(field))
