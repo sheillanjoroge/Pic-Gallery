@@ -1,11 +1,11 @@
-.container{
+/* .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .image{
     margin-bottom: 20px;
-}
+} */
 .image img{
     width: 300px;
     border-radius: 20px;
