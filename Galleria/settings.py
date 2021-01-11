@@ -69,7 +69,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'photos'
+    'photos',
+    'bootstrap3'
 ]
 
 MIDDLEWARE = [
@@ -112,7 +113,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'galleria',
-        'USER': 'postgres',
+        'USER': 'moringa',
         'PASSWORD': '12345678'
     }
 }
