@@ -2,11 +2,11 @@ from django.test import TestCase
 
 from .models import Tag, Location, Image
 
-class TestTag(TestCase):
+# class TestTag(TestCase):
 
-    def setUp(self):
-        self.a_tag = Tag(name='Minimalism')
-        self.a_tag.save()
+#     def setUp(self):
+#         self.a_tag = Tag(name='Minimalism')
+#         self.a_tag.save()
     
     def test_instance(self):
         self.assertTrue(isinstance(self.a_tag, Tag))
