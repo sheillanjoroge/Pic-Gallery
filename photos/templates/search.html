@@ -15,7 +15,7 @@
             <div class="image">
                 <div class="img-div">
                     <a href="/photo/{{image.id}}">
-                        {% comment %} <img src="{{image.image_upload.url}}" alt="">
+                        <img src="{{image.image_upload.url}}" alt="">
                     </a>
                     
                     <div class="more">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             {% empty%}
-            <div class="image"> {% endcomment %}
+            <div class="image">
                 <div class="img-dv">
                     <img src="{% static 'images/nada.svg' %}" alt="">
                 </div>
