@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from .models import Image, Tag, Location
 
-# # Create your views here.
-# def index(request):
-#     all_images = Image.get_all_images()
-#     all_tags = Tag.get_all_tags()
-#     all_locations = Location.get_all_locations()
+# Create your views here.
+def index(request):
+    all_images = Image.get_all_images()
+    all_tags = Tag.get_all_tags()
+    all_locations = Location.get_all_locations()
 
     return render(request, 'home.html', {'images': all_images, 'tags': all_tags, 'locations': all_locations})
 
