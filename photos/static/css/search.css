@@ -33,18 +33,18 @@
     background-color: white;
 
     border-radius: 20px;
-    color: #6F0AAF;
+    color: #3cad20;
     z-index: 100;
 
 }
 
 .popover-header{
-    color: #6F0AAF;
+    color: #3cad20;
 }
 
 .search-term{
     color: white;
-    background-color: #491cff;
+    background-color: #3cad20;
     font-weight: bold;
     border-radius: 10px;
     padding: 5px

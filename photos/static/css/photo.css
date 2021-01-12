@@ -12,11 +12,11 @@ img{
     width: 100%;
 }
 a, a:visited, a:hover{
-    color: #491cff;
+    color: #3cad20;
 }
 .title{
     font-size: 24px;
-    color: #6F0AAF;
+    color: #3cad20;
 }
 .share-btn{
     display: flex;
@@ -25,8 +25,8 @@ a, a:visited, a:hover{
     margin-bottom: 30px;
 }
 .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover{
-    background-color: #491cff;
-    border-color: #491cff;
+    background-color: #3cad20;
+    border-color: #3cad20;
 }
 
 @media screen and (min-width: 600px){

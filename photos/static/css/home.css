@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1481923387198-050ac1a2896e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dmludGFnZSUyMGNhbWVyYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
 }
 .image{
     margin-bottom: 20px;
@@ -29,12 +30,12 @@
     background-color: white;
 
     border-radius: 20px;
-    color: #6F0AAF;
+    color: #3cad20;
     z-index: 100;
 
 }
 .popover-header{
-    color: #6F0AAF;
+    color: #3cad20;
 }
 
 @media screen and (min-width: 600px){

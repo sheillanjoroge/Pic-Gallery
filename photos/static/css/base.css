@@ -1,5 +1,6 @@
 body{
-    background-color: #fffbfe;
+    /* background-color: #fffbfe; */
+    background-image: url('https://images.unsplash.com/photo-1481923387198-050ac1a2896e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dmludGFnZSUyMGNhbWVyYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
 }
 .logo-div{
     display: flex;
@@ -7,7 +8,7 @@ body{
     
 }
 .logo-div img{
-    width: 8%;
+    width: 10%;
     background-color: white;
     
 }
@@ -34,7 +35,7 @@ body{
     margin-top: -8px;
 }
 .selected{
-    color: #491cff;
+    color: #3cad20;
     font-weight: bold;
 }
 .default{
@@ -46,8 +47,8 @@ body{
 }
 
 .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover{
-    background-color: #491cff !important;
-    border-color: #491cff !important;
+    background-color: #3cad20 !important;
+    border-color: #3cad20 !important;
 }
 @media screen and (min-width: 600px){
     .logo-div{
@@ -85,7 +86,7 @@ body{
         margin-bottom: 10px;
     }
     .search :focus{
-        background-color: #491cff;
+        background-color: #3cad20;
     }
     .round-border{
         border-radius: 20px !important;
