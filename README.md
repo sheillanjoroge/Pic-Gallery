@@ -2,7 +2,10 @@
 
 A platform for sharing photos and experiences from places around the world.
 
-#### By **Sheilla Njoroge**
+### By **Sheilla Njoroge**
+
+## Project Image
+<img src="static/images/picgalleria.png" align="center" width="150%"/>
 
 ## Description
 
