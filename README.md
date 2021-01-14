@@ -6,7 +6,7 @@ A platform for sharing photos and experiences from places around the world.
 
 ## Project Image
 file:///home/moringa/Galleria/photos/static/images/picgalleria.png
-/home/moringa/Galleria/photos/static/images/picgalleria.png
+
 
 ## Description
 
