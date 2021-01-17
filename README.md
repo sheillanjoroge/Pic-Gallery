@@ -5,7 +5,7 @@ A platform for sharing photos and experiences from places around the world.
 ### By **Sheilla Njoroge**
 
 ## Project Image
-file:///home/moringa/Galleria/photos/static/images/picgalleria.png
+![image](https://user-images.githubusercontent.com/70701845/104847294-45b7c980-58f0-11eb-9922-a56a2e5126cf.png)
 
 
 ## Description
